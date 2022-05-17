@@ -17,3 +17,12 @@ class TestApiMethods(TestCase):
 
         self.assertEquals(response.status_code, 200)
         self.assertEquals(response.text, str(db.query(Emails).all()))
+
+    def test_post(self) -> None:
+        data = {
+            "email": "testemail@test.com",
+            "message": "test_message"
+        }
+        response = self.client.post('/send', json=data)
+
+        self.assertEquals(response.status_code, 200)
