@@ -1,4 +1,4 @@
-# EmailSender is application which send email and special message. App was built on microservice architecture 📬​➿​
+# EmailSender is application which send email and special message. App was built on microservice architecture 📬
 <hr>
 
 ## App features:
